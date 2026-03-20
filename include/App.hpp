@@ -2,6 +2,10 @@
 #define APP_HPP
 
 #include "pch.hpp" // IWYU pragma: export
+// #include <memory>
+// #include "Util/GameObject.hpp"
+// #include "Util/Image.hpp"
+#include "Player.hpp"
 
 class App {
 public:
@@ -22,8 +26,9 @@ public:
 private:
     void ValidTask();
 
-private:
     State m_CurrentState = State::START;
+    // std::shared_ptr<Util::GameObject> m_Player;
+    Player m_Player;
 };
 
 #endif

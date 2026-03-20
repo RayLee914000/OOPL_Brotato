@@ -4,6 +4,7 @@
 #include "Util/Input.hpp"
 #include "Util/Keycode.hpp"
 #include "Util/Logger.hpp"
+#include "Util/Transform.hpp"
 
 void App::Start() {
     LOG_TRACE("Start");
@@ -13,7 +14,8 @@ void App::Start() {
 void App::Update() {
     
     //TODO: do your things here and delete this line <3
-    
+    m_Player.Draw();
+    m_Player.Update();
     /*
      * Do not touch the code below as they serve the purpose for
      * closing the window.
